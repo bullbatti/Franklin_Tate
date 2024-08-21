@@ -1,0 +1,38 @@
+::ng-deep .p-card-body {
+  width: 80px;
+  height: 100px;
+  padding: 10px 5px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+::ng-deep .p-card-title {
+  font-size: 0.6em;
+  padding: 0;
+  margin: 0;
+  text-wrap: nowrap;
+  text-align: left;
+}
+
+::ng-deep .p-card-content {
+  padding: 10px 0 0 0;
+}
+
+::ng-deep .p-button {
+  width: 100%;
+}
+
+img {
+  width: 70px;
+  height: 50px;
+}
+
+p {
+  font-weight: 600;
+  text-align: left;
+  margin-left: 40px;
+}

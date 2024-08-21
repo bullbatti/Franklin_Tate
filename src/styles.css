@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+@font-face {
+  font-family: "GtaFont";
+  src: url("./assets/fonts/pricedownbl.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --black: #0d1321;
+  --white: #ffeddf;
+  --blue: #afe0ce;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--black);
+  overflow-x: hidden;
+}
+
+.section-title {
+    position: relative;
+    font-family: "GtaFont";
+    color: orange;
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}

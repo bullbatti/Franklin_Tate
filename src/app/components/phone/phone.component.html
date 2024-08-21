@@ -1,0 +1,27 @@
+@if (isPhoneVisibile) {
+<div id="phone-button" pTooltip="Close Phone" (click)="togglePhone()">
+  <i class="pi pi-sign-out" style="font-size: 2rem"></i>
+</div>
+} @else {
+<div id="phone-button" pTooltip="Open Phone" (click)="togglePhone()">
+  <i class="pi pi-mobile" style="font-size: 2rem"></i>
+</div>
+}
+
+<div id="phone">
+  <div id="screen">
+    <div id="camera"></div>
+
+    @if (isLegendaryMotorsportClicked) {
+        <app-legendary-motorsport />
+    } @else {
+        <div id="app-container">
+            @for (a of applications; track $index) {
+            <app-app [name]="a.name" [image]="a.image" [link]="a.link" />
+            }
+          </div>
+    }
+
+    <div id="bar"></div>
+  </div>
+</div>

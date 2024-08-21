@@ -1,0 +1,15 @@
+section  {
+    height: calc(100dvh - 200px);
+}
+
+#description  {
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--white);
+    padding: 0 2rem;
+}
+
+#image-container {
+    margin-top: 60px;
+    text-align: center;
+}
