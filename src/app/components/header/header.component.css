@@ -5,6 +5,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: #06080e;
   padding: 20px 0;
 }
@@ -22,6 +23,7 @@ header {
 }
 
 #navbar {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +32,7 @@ header {
 }
 
 #navbar ul {
+  width: 100%;
   display: flex;
   gap: 60px;
   justify-content: center;
@@ -46,7 +49,27 @@ header {
   transition: 0.3s;
 }
 
-#navbar ul a:hover {
-  color: orange;
-  transition: 0.3s;
+
+
+@media screen and (max-width: 768px) {
+
+  header {
+    height: 100%;
+  }
+
+  #sub-title {
+    font-size: 1rem;
+  }
+
+  #navbar ul {
+    gap: 15px;
+  }
+  
+}
+
+@media (hover: hover), (-ms-high-contrast:none) {
+  #navbar ul a:hover {
+    color: orange;
+    transition: 0.3s;
+  }
 }

@@ -88,3 +88,9 @@
     bottom: 25px;
     z-index: 999;
   }
+
+  @media screen and (max-width: 768px) {
+    #phone.active {
+      right: calc((100% - 200px) / 2);
+    }
+   }
