@@ -1,9 +1,16 @@
 <p-card [header]="car.name">
   <img [src]="car.image_url" alt="car image" />
-  <!-- <p>Acceleration: {{ car.acceleration }}</p>
+  <p>Acceleration: {{ car.acceleration }}</p>
     <p>Handling: {{ car.handling }}</p>
     <p>Max Speed: {{ car.max_speed }}</p>
     <p>Price: {{ car.price }}</p>
 
-    <p-button label="Buy" /> -->
+    <p-button label="Buy" (onClick)="showDialog()"/>
 </p-card>
+
+@if (visible) {
+  <video width="320" height="240" autoplay>
+    <source src="../../../assets/andrew.mp4" type="video/mp4">
+  </video>
+}
+

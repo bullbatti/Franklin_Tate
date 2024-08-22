@@ -21,6 +21,11 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  width: 100%;
+  height: calc(100dvh - 200px);
+}
+
 .section-title {
     position: relative;
     font-family: "GtaFont";
@@ -29,4 +34,16 @@ body {
     text-align: center;
     margin: 0;
     padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    position: relative;
+    font-family: "GtaFont";
+    color: orange;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
 }

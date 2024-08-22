@@ -1,4 +1,58 @@
-<app-header />
-<app-phone />
+<!-- HEADER -->
+<header>
+  <h1 id="hero-title">Franklin Tate</h1>
+  <h3 id="sub-title">The cryptocurrency that came out before GTA VI</h3>
+  <nav id="navbar">
+    <ul>
+      <a routerLink="/about">
+        <li>About</li>
+      </a>
+      <a routerLink="/roadmap">
+        <li>Roadmap</li>
+      </a>
+      <a (click)="contactClic()">
+        <li>Contact</li>
+      </a>
+      <a routerLink="/games">
+        <li>Games</li>
+      </a>
+      <a routerLink="/memes">
+        <li>Memes</li>
+      </a>
+    </ul>
+  </nav>
+</header>
+
+@if (isPhoneVisibile) {
+<div id="phone-button" pTooltip="Close Phone" (click)="togglePhone()">
+  <i class="pi pi-sign-out" style="font-size: 2rem"></i>
+</div>
+} @else {
+<div id="phone-button" pTooltip="Open Phone" (click)="togglePhone()">
+  <i class="pi pi-mobile" style="font-size: 2rem"></i>
+</div>
+}
+
+<div id="phone">
+  <div id="screen">
+    <div id="camera"></div>
+
+    <div id="app-container">
+      @for (a of applications; track $index) {
+      <app-social [name]="a.name" [image]="a.image" [link]="a.link" />
+      }
+    </div>
+
+    <div id="bar"></div>
+  </div>
+</div>
+
 <router-outlet />
-<app-footer />
+
+<footer>
+  <p><a (click)="contactClic()">Contact Us</a></p>
+  <p>
+    &copy; 2024 Franklin Tate. All rights reserved | Waiting for GTA 6 since
+    2013.
+  </p>
+</footer>

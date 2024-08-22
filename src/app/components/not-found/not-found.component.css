@@ -1,0 +1,15 @@
+section {
+    height: calc(100dvh - 400px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    margin: 0;
+    color: var(--blue);
+    font-family: "GtaFont";
+    font-size: 2rem;
+}

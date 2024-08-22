@@ -1,0 +1,33 @@
+#games-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(204, 133, 0);
+}
+
+.game-img {
+    width: 100%;
+    border-radius: 10px 10px 0 0px;
+    margin: 0;
+}
+
+.game-title {
+    text-align: center;
+    color: white;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+::ng-deep .p-button {
+    padding: 5px;
+    width: 100%;
+    margin: 0;
+    border: 0; 
+}

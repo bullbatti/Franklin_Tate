@@ -1,15 +1,14 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-app',
+  selector: 'app-social',
   standalone: true,
   imports: [],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './social.component.html',
+  styleUrl: './social.component.css'
 })
-export class AppComponent {
+export class SocialComponent {
   @Input() name!: string;
   @Input() image!: string;
   @Input() link!: string;
-
 }

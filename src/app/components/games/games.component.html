@@ -1,0 +1,23 @@
+<section>
+  <h1 class="section-title">Our games</h1>
+
+  <div id="games-container">
+    <p-carousel
+      [value]="games"
+      [numVisible]="3"
+      [numScroll]="1"
+      [responsiveOptions]="responsiveOptions"
+      autoplayInterval="3000"
+    >
+      <ng-template let-game pTemplate="item">
+        <div class="game">
+            <img [src]="game.image" [alt]="game.name" class="game-img">
+            <p-button label="Play Game" [routerLink]="game.link" />
+            <h3 class="game-title">{{ game.name }}</h3>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+
+  <router-outlet />
+</section>

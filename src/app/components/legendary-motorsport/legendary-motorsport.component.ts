@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { CarComponent } from '../car/car.component';
 import { Car } from '../../interfaces/car';
+import { DialogModule } from 'primeng/dialog';
 
 @Component({
   selector: 'app-legendary-motorsport',
   standalone: true,
-  imports: [CarComponent],
+  imports: [CarComponent, DialogModule],
   templateUrl: './legendary-motorsport.component.html',
   styleUrl: './legendary-motorsport.component.css',
 })
