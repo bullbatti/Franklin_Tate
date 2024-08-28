@@ -20,6 +20,6 @@ export class CarComponent {
   
     setTimeout(() => {
       this.visible = false;
-    }, 4500);
+    }, 3750);
   }
 }

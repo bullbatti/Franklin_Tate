@@ -1,20 +1,64 @@
 section {
-  margin: 30px 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   z-index: 9;
 }
 
 #car-container {
-  margin-top: 30px;
+  margin: 30px 0;
   display: flex;
-  gap: 60px;
+  gap: 20px;
   justify-content: space-evenly;
   flex-wrap: wrap;
   float: left;
   overflow: scroll;
+  width: calc(100% - 40vh);
+  padding: 0 10px;
+  overflow-x: hidden;
 }
 
+/* width */
 #car-container::-webkit-scrollbar {
-  display: none;
+  width: 10px;
+  position: absolute;
+}
+
+/* Track */
+#car-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+#car-container::-webkit-scrollbar-thumb {
+  background: rgb(110, 72, 0);
+}
+
+/* Handle on hover */
+#car-container::-webkit-scrollbar-thumb:hover {
+  background: orange;
+}
+
+@media screen and (max-width: 1500px) {
+  #car-container {
+    width: calc(100% - 30vh);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #car-container {
+    width: calc(100% - 20vh);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #car-container {
+    width: calc(100% - 10vh);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #car-container {
+    width: calc(100% - 5vh);
+  }
 }
