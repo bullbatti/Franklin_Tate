@@ -17,9 +17,9 @@ export class CarComponent {
 
   showDialog() {
     this.visible = true;
-  
-    setTimeout(() => {
-      this.visible = false;
-    }, 3750);
+  }
+
+  hideDialog() {
+    this.visible = false;
   }
 }
