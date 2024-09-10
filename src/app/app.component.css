@@ -198,6 +198,11 @@ footer p a{
     footer p a{
         font-size: 1.5em;
     }
-    
-    
+}
+
+@media screen and (max-width: 640px) {
+
+  #hero-title {
+    font-size: 3rem;
+  }
 }

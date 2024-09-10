@@ -47,3 +47,9 @@ section {
     padding-top: 20px;
 }
 }
+
+@media screen and (max-width: 640px) {
+  .section-title {
+    font-weight: 400;
+  }
+}
